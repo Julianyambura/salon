@@ -6,7 +6,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+    "build": "tailwindcss -i ./src/input.css -o ./public/style.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./public/style.css  --watch"
   },
   "keywords": [],
   "author": "",
