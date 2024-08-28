@@ -1,82 +1,479 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Planning Assistant</title>
+    <title>TPA</title>
+
+ 
     <link rel="stylesheet" href="style.css" />
+
   </head>
-  <body class="bg-blue-200">
-    <div class="container mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-8">TPA</h1>
-      <form id="travel-form" class="bg-white p-6 rounded-lg shadow-md">
-        <div class="mb-4">
-          <img src="" alt="" />
-          <label for="destination" class="block text-blue-700 font-bold mb-2"
-            >Destination:</label
-          >
-          <img src="" alt="" class="w-4 h-4 mr-2 inline-block" />
-          <input
-            type="text"
-            id="destination"
-            class="w-full p-2 pl-10 text-sm text-green-700"
-            placeholder="Enter destination"
-          />
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+        <div class="container">
+          <a href="tel:+254 718899074" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div class="wrapper">
+              <p class="helpline-title">For Further Inquires :</p>
+
+              <p class="helpline-number">+254 718899074</p>
+            </div>
+          </a>
+
+          <a href="#" class="logo">
+            <img src="" alt="" />
+          </a>
+
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
         </div>
-        <div class="mb-4">
-          <label for="travel-dates" class="block text-gray-700 font-bold mb-2"
-            >Travel Dates:</label
-          >
-          <input
-            type="date"
-            id="travel-dates"
-            name="travel-dates"
-            class="w-full border-purple-600 rounded-lg px-4 py-2"
-          />
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="" alt="" />
+              </a>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>home</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>about us</a>
+              </li>
+
+              <li>
+                <a href="#destination" class="navbar-link" data-nav-link
+                  >destination</a
+                >
+              </li>
+
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link
+                  >packages</a
+                >
+              </li>
+
+              
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link
+                  >contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn btn-primary">Book Now</button>
         </div>
-        <div class="mb-4">
-          <label for="budget" class="block text-gray-700 font-bold mb-2"
-            >Budget:</label
-          >
-          <input
-            type="number"
-            id="budget"
-            name="budget"
-            class="w-full border-b-red-800 rounded-lg px-4 py-2"
-          />
+      </div></header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">TPA</h2>
+
+            <p class="hero-text">
+              "Dreaming of a sun-soaked escape but worried about the cost? We've
+              got you covered! 🏖️ TPA offers personalized travel planning,
+              helping you find the perfect destination that fits your budget
+              without compromising on fun. Let us guide you to affordable
+              paradise."
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary">Learn more</button>
+
+              <button class="btn btn-secondary">Book now</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #TOUR SEARCH
+      -->
+
+        <section class="tour-search">
+          <div class="container">
+            <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"
+                  >Search Destination*</label
+                >
+
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Enter Destination"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="people" class="input-label"
+                  >Number of people*</label
+                >
+
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="No.of People"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="Date" class="input-label">Date*</label>
+
+                <input
+                  type="date"
+                  name="Date"
+                  id="Date"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="budget" class="input-label">budget*</label>
+
+                <input
+                  type="money"
+                  name="budget"
+                  id="budget"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">submit</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- 
+        - #POPULAR
+      -->
+
+        <section class="popular" id="destination">
+          <div class="container">
+            <p class="section-subtitle">Uncover place</p>
+
+            <h2 class="h2 section-title">Popular destination</h2>
+
+            <p class="section-text">
+              Here are some popular beach destinations that offer stunning
+              scenery without breaking the bank:
+            </p>
+
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="🍀🌿.jpeg"
+                      alt="Beach Mombasa"
+                      loading="lazy" />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#Kenya">Kenya</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#Mombasa">Mombasa</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Mombasa is a vibrant coastal city in Kenya, renowned for
+                      its beautiful beaches, rich history, and warm
+                      weather...
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="Turtle Aquarium Zanzibar.jpeg"
+                      alt="Tanzania zanzibar"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#Tanzania">Tanzania</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#Zanzibar">Zanzibar</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Tanzania offers stunning wildlife, beautiful beaches, and the opportunity to climb Mount Kilimanjaro.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="Seychelles.jpeg"
+                      alt="seychell beach"
+                      
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#indian ocean">Indian ocean</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#seychell">Seychell</a>
+                    </h3>
+
+                    <p class="card-text">
+                      White Sandy Beaches: The Seychelles boasts some of the most beautiful white sandy beaches in the world, perfect for sunbathing, swimming, and relaxing.ß
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary">More destintion</button>
+          </div>
+        </section>
+
+        <!-- 
+        - #PACKAGE
+      -->
+
+        <section class="package" id="package">
+          <div class="container">
+            <p class="section-subtitle">Popular Packages</p>
+
+            <h2 class="h2 section-title">Checkout Our Packages</h2>
+
+            <p class="section-text">
+              When choosing a travel package, consider your interests, budget, and desired level of comfort. Many travel agencies offer customizable packages to suit your specific needs.
+            </p>
+
+
+        <section class="cta" id="contact">
+          <div class="container">
+            <div class="cta-content">
+              <p class="section-subtitle">Call To Action</p>
+
+              <h2 class="h2 section-title">
+                Ready For Unforgatable Travel. Remember Us!
+              </h2>
+
+              <p class="section-text">
+                Let's explore the world together! Did you know that there are more than 195 countries in the world?
+              </p>
+            </div>
+
+            <button class="btn btn-secondary">Contact Us !</button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="" alt="" />
+            </a>
+
+            <p class="footer-text">
+              "The world is a book, and those who do not travel read only one page." - Saint Augustine
+            </p>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="contact-title">Contact Us</h4>
+
+            <p class="contact-text">Feel free to contact and reach us !!</p>
+
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <a href="tel:+254 718899074 class="contact-link"
+                  >+254 718899074 </a
+                >
+              </li>
+
+              
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address> Kileleshwa, Nairobi</address>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-form">
+            <p class="form-text">
+              Subscribe our newsletter for more update & news !!
+            </p>
+
+            <form action="" class="form-wrapper">
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder="Enter Your Email"
+                required
+              />
+
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+          </div>
         </div>
-        <div class="mb-4">
-          <label for="interests" class="block text-gray-700 font-bold mb-2"
-            >Interests:</label
-          >
-          <input
-            type="text"
-            id="interests"
-            name="interests"
-            class="w-full border-gray-300 rounded-lg px-4 py-2"
-          />
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 <a href="">Juliah</a>. All rights reserved
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Term & Condition</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+          </ul>
         </div>
-        <div class="mb-4">
-          <label for="num-travelers" class="block text-gray-700 font-bold mb-2"
-            >Number of Travelers:</label
-          >
-          <input
-            type="number"
-            id="num-travelers"
-            name="num-travelers"
-            class="w-full border-gray-300 rounded-lg px-4 py-2"
-          />
-        </div>
-        <button
-          type="submit"
-          class="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-slate-500"
-        >
-          Plan My Trip
-        </button>
-      </form>
-      <div id="itinerary" class="mt-4"></div>
-      <div id="map" class="mt-4"></div>
-    </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    
+
+    <!-- 
+    - custom js link
+  -->
     <script src="script.js"></script>
+
+   
+    ></script>
   </body>
 </html>
