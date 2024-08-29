@@ -1399,3 +1399,24 @@ address {
     max-width: 1180px;
   }
 }
+
+/* Add this to your style.css file */
+
+.about {
+  background-image: url("ae01003a-e218-414b-b20e-5daf71911340.jpeg"); /* Replace with the path to your background image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  color: white; /* Optional: Change text color for better readability */
+  padding: 50px 0; /* Optional: Adjust padding as needed */
+}
+
+.about .container {
+  position: relative;
+  z-index: 1; /* Ensure text is above the background image */
+}
+
+.about p,
+.about h2 {
+  color: #fff; /* Ensure text is readable against the background */
+}

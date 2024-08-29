@@ -17,3 +17,62 @@ Optimization: Optimize an itinerary by taking into account factors such as time 
 User Interface: Offer a user-friendly interface that can be used with the planner.
 Offer guides if needed and provide a map to help the user
 
+
+
+<!-- 
+The data structure should include collections like the following: destinations and attractions, lodgings, vehicles, weather data.
+
+Let us see how to populate the database: you can gather and populate the database with relevant information.
+
+[ x ] HTML Structure: Implement an HTML document enclosing forms for the acquisition of the user’s preferences (where, when, how much, what, how many).
+
+CSS Styling: Enhance the graphical user interface by applying CSS for easy navigation.
+
+JavaScript Integration: Use JavaScript so as to submit the forms, update them dynamically and engage the users.
+
+User Input:
+
+Form Validation: Perform validation of the user input using Javascript (for example make sure if the inputted dates are square, the inputted budget is numerical).
+
+Data Storage: Use JavaScript variables or local storage to save user specific information for future use.
+
+Destination Data Retrieval:
+
+API or Database Query: Users should be able to query your API (such as Google Maps or TravelStack) or Database to obtain destination information based on the user profile.
+
+Data Parsing: Identify and extract the relevant features from that information (attractions, lodging, vehicles, weather).
+
+Itinerary Generation:
+
+Algorithm: Propose an intineray for the user according to the preferences given and the information on the destination available. Distance, time, and cost should also be put into consideration.
+
+Dynamic Updates: Update the itinerary in real-time with the help of Javascript when changes are made in the user
+
+ Optimizing Itinerary:* Itinerary Optimisation: An optimization algorithm like GA or SA is to be used to provide the best fit of an itinerary related to time spent traveling, cost, and user preference.
+
+ Constraints: Consider constraints like a bound on the travel time, budget constraints, and must-see attractions.
+
+ User Interface Enhancements:
+ Showcase Itinerary: Use JavaScript in order to display the generated itinerary on the UI, including attraction names, lodgings, and travel bookings.
+
+ Map Embedding: Employ an API for maps, like Google Maps, to showcase the itinerary on the map.
+Guides and Recommendations: Add information or recommendations based on users' interests and destination data.
+
+ Additional Features:
+ Personalization: Enable users to customize their itinerary for example, adding or removing attractions and modifying travel time.
+
+ Recommendations: Provide personalized recommendations according to user preference and past behavior.
+
+ Booking Integration: Include in the application the feature of booking integrations for booking hotels and flights directly through an app.
+
+Testing and Refinement
+
+ Exhaustive Testing: An app should be tested on multiple inputs and multiple use-cases to trace and eliminate bugs.
+
+ User Feedback: Gather feedback from users in order to improve in both usability and functionality.
+
+
+
+
+
+
