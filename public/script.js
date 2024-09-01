@@ -42,7 +42,17 @@
 /**
  * navbar toggle
  */
-
+const itinerary = {
+  name: "My Dream Vacation",
+  destinations: [
+    {
+      name: "Paris",
+      activities: ["Visit Eiffel Tower", "Explore Louvre Museum"],
+      accommodations: ["Hotel de Crillon"],
+    },
+    // ... more destinations
+  ],
+};
 const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
