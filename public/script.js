@@ -41,24 +41,24 @@
 
 /**
  * navbar toggle
- */
-const itinerary = {
-  name: "My Dream Vacation",
-  destinations: [
-    {
-      name: "Paris",
-      activities: ["Visit Eiffel Tower", "Explore Louvre Museum"],
-      accommodations: ["Hotel de Crillon"],
-    },
-    // ... more destinations
-  ],
-};
-const overlay = document.querySelector("[data-overlay]");
-const navOpenBtn = document.querySelector("[data-nav-open-btn]");
-const navbar = document.querySelector("[data-navbar]");
-const navCloseBtn = document.querySelector("[data-nav-close-btn]");
-const navLinks = document.querySelectorAll("[data-nav-link]");
-const navLinksContainer = document.querySelector("[data-nav-links-container]");
+//  */
+// const itinerary = {
+//   name: "My Dream Vacation",
+//   destinations: [
+//     {
+//       name: "Paris",
+//       activities: ["Visit Eiffel Tower", "Explore Louvre Museum"],
+//       accommodations: ["Hotel de Crillon"],
+//     },
+//     // ... more destinations
+//   ],
+// };
+// const overlay = document.querySelector("[data-overlay]");
+// const navOpenBtn = document.querySelector("[data-nav-open-btn]");
+// const navbar = document.querySelector("[data-navbar]");
+// const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+// const navLinks = document.querySelectorAll("[data-nav-link]");
+// const navLinksContainer = document.querySelector("[data-nav-links-container]");
 
 // const navElemArr = [navOpenBtn, navCloseBtn, overlay];
 
@@ -90,3 +90,8 @@ const navLinksContainer = document.querySelector("[data-nav-links-container]");
 //     goTopBtn.classList.remove("active");
 //   }
 // });
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
